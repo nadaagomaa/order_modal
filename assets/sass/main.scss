@@ -1,0 +1,89 @@
+
+
+@use '../sass/variables/fonts' as * ;
+@use '../sass/variables/colors' as*;
+//@use "assets/sass/helpers/mixens" as*;
+//@use "assets/sass/helpers/extends" as*;
+
+
+body{
+  font-family: $font;
+  
+}
+header span , h3 {
+  color: $primary-color;
+}
+.R-Voucher{font-size: 13px; color:$gray-color ; }
+.order{box-shadow: 2px 2px 2px 2px $gray-color;
+}
+.item-name{
+  font-size: $font-size-23px
+  
+}
+.item-price{
+  font-size: 27px;
+  
+}
+
+  
+  hr{
+    color: $dark-gray;
+    height: 1px;
+  }
+  
+   
+  .progress{
+    height: 8px;
+    background-color: #bebec1;
+    margin-top: 10px;
+    
+   .progress-bar{
+   background-color: $primary-color;
+   
+   }
+  }
+  .order-details{
+    font-size: $font-size-23px;
+    font-weight: bold;
+    color: black;
+  }
+  //modal
+  .modal {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(100%); 
+    opacity: 0; 
+  
+    &.show {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+  }
+  .extend {
+      margin-left: 10px;
+      
+  }
+  .openButton{
+   background-color: $primary-color;
+   color: white;
+   
+  
+  }
+  footer{
+    p{margin-bottom: 0%;}
+  }
+
+  $small-devices: screen and (max-width: 600px);
+
+// Media query for small devices
+$small-device: 600px;
+.order-img {
+  width: 100%; 
+  height: auto; 
+
+  @media (max-width: $small-device) {
+    width: 70%; 
+    height: auto; 
+    margin-left: 7px;
+    
+  }
+}

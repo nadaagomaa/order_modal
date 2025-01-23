@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+<body>
+    <!-- Header -->
+<button type="button" class="btn openButton" id="openModal" data-bs-toggle="modal" data-bs-target="#customModal">show order details</button>
+<!-- Modal Structure -->
+<div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" >
+    <div class="modal-dialog modal-xl modal-dialog-scrollable ">
+        <div class="modal-content">
+            <div class="modal-header"><!--modal header-->
+                <!--<h5 class="modal-title" id="modalLabel">Order Details Page</h5>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" id="fullscreenToggle" class="extend"><i class="bi bi-fullscreen"></i></button> 
+            </div>
+            <div class="modal-body"><!--modal body-->
+
+            
+             
+                <div class="container text-black-50 my-5"><!--page header-->
+                 <header class="row align-items-center justify-content-between text-black-50 ms-3 ">
+                    <div class=" col-12 col-lg-7 ">
+                        <h1>Thanks for your order! ,<span>Anjali</span></h1>
+    
+
+                    </div>
+                    <div class="col-lg-3 d-flex flex-column align-items-center mt-4 ">
+                         <img src="assets/imgs/icon1.png" alt="Logo" class="img-fluid mb-2"> 
+                         <p class="text-center">Glasses For Everyone</p>
+                   </div>
+
+                 </header>
+
+                </div>
+             <hr>
+                 <!-- body-->
+                <div class="container text-black-50">
+                    <div class="row mt-4">
+                        <div class="col"><h3 class="Reciept">Receipt</h3></div>
+                        <div class="col mt-1"><p class="R-Voucher text-end">Receipt Voucher: 1KUA-48UIL</p></div>
+                    </div>
+               
+                          <!--order one-->
+                   <div class="container order my-4">
+                     <div class="row text-center align-items-center">
+                        <div class=" col-md-6 col-lg-2"><img src="assets/imgs/icon2.png" alt="" class="img-fluid order-img"></div>
+                        <div class="  col-md-6 col-lg-2 pt-lg-5 ">
+                            <p class="item-name">Jack Jacks</p>
+                        </div>
+                        <div class="  col-md-6 col-lg-2 pt-lg-5"> <!--  ask-->
+                            <p class=" fs-6">Golden Rim</p>
+                        </div>
+                        <div class="  col-md-6 col-lg-2 pt-lg-5 ">
+                            <p >Size: M</p>
+                        </div>
+                        <div class="  col-md-6 col-lg-2 pt-lg-5 ">
+                            <p >Qty: 1</p>
+                        </div>
+                        <div class="  col-md-6 col-lg-2 pt-lg-5">
+                            <p class="item-price">$3,600.00</p>
+                        </div> 
+                    </div>
+                    <div class="row px-2">
+                    <div> <hr> </div>
+                    </div>
+                    <div class="row px-2 mt-2">
+                        <div class="col-3 fs-6 "> <p class="">Track Order</p>
+                        </div>
+                        <div class="col-9">
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 60%;">
+                              </div> 
+                            </div>
+                        </div>
+                    <div class="row text-end ">
+                        <div class="col-9 "><p>Out for Delivery</p></div>
+                        <div class="col-3 "><p>Delivered</p></div>
+                    </div>
+                    </div>
+            </div>
+
+                
+                <!--order two-->
+            <div class="container order my-4 pt-3">
+        <div class="row text-center align-items-center">
+            <div class="col-md-6 col-lg-2 pt-2 " ><img src="assets/imgs/icon3.png" alt="" class="img-fluid order-img "></div>
+            <div class=" col-md-6 col-lg-2 pt-lg-5 ">
+                <p class="item-name">Michel Mark</p>
+            </div>
+            <div class="  col-md-6 col-lg-2 pt-lg-5"> <!--  ask-->
+                <p class=" fs-6">Black Rim</p>
+            </div>
+            <div class=" col-md-6 col-lg-2 pt-lg-5 ">
+                <p >Size: L</p>
+            </div>
+            <div class= "col-md-6 col-lg-2 pt-lg-5 ">
+                <p >Qty: 1</p>
+                </div>
+            <div class="  col-md-6 col-lg-2 pt-lg-5">
+                <p class="item-price">$1,235.00</p>
+
+            </div> 
+             
+        </div>
+        <div class="row px-2">
+            <div> <hr> </div>
+        </div>
+        <div class="row px-2 mt-2">
+            <div class="col-3 fs-6 "> <p class="">Track Order</p></div>
+            <div class="col-9">
+                <div class="progress">
+                <div class="progress-bar" style="width: 100%;"></div> 
+                 
+            </div>
+            </div>
+            <div class="row text-end ">
+                <div class="col-9 "><p>Out for Delivery</p></div>
+                <div class="col-3 fs-5 "><p>Delivered</p></div>
+            </div>
+        </div>
+           </div>    
+                 <!--footer-->   
+            <footer class="container text-black-50">
+    <div class="row  ">
+        <div class=" col-lg-9  ">
+           <div class= "order-details">Order Details</div>
+            
+           <p> Invoice Number: 788152</p>
+           <p>Invoice Date: 22/Dec/2019</p>
+           <p>Receipt Voucher: 18KU-KLL62</p>
+        </div>
+        <div class=" col-10 col-md-10 col-lg-2 text-end  fw-bold">
+            <p>Total</p>
+            <p>Discount</p>
+            <p>GST</p>
+            <p>Delivary Charges</p>
+        
+        </div>
+        <div class="col-2 col-md-2 col-lg-1 total-details text-end ">
+        <p>$4835</p>
+        <p>$150</p>
+        <p>18%</p>
+        <p>Free</p>
+        </div>
+    </div>
+            </footer> 
+        </div>
+           
+        
+    </div>
+         
+            
+            <!-- Modal footer -->
+         <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+           </div>
+        </div>
+   </div>
+</div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/all.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
